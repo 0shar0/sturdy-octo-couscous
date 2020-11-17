@@ -64,10 +64,10 @@ let nowhour = (new Date()).getHours();
 
 //-----7.1-----
 
-if (nowhour <= 5 || 23 <= nowhour){alert("ДоброЇ ночі")}
-else if (nowhour > 5 || nowhour <= 11){alert("Доброго ранку")}
-else if (nowhour > 11 || nowhourm <= 17){alert("Доброго дня")}
-else(alert("Доброго вечора"));
+if      (5 < nowhour && nowhour < 11){alert("Доброго ранку")}
+else if (11 < nowhour && nowhour < 17){alert("Доброго дня")}
+else if (17 < nowhour && nowhour < 23){alert("Доброго вечора")}
+else(alert("ДоброЇ ночi"));
 
 //-----7.2-----
 
