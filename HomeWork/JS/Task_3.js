@@ -71,20 +71,33 @@
 
 //-----6-----
 
-function findUnique(arr){
-    for( i = 0; i < arr.length; i++){
-        for( l = i + 1; l < arr.length; l++){
-            if(arr[i] === arr[l] && i != l){
-                return false}
-            }
-        }
-    return true
-}
-
-
-
+// function findUnique(arr){
+//     for( i = 0; i < arr.length; i++){
+//         for( l = i + 1; l < arr.length; l++){
+//             if(arr[i] === arr[l] && i != l){
+//                 return false}
+//             }
+//         }
+//     return true
+// }
 
 //-----7-----
 
+// function lastElement(arr,a = 1){
+//     if (a < arr.length){
+//     for (i = 0; i = arr.length - a; i++){
+//         arr.shift(i)}
+//     }
+//     console.log(arr)
+// }
 
 // //-----8----
+
+let str = "i love java script"
+function bigLeter(str){
+    return str.replace(/(^|\s)\S/g,
+    function(a){
+        return a.toUpperCase()
+    })
+    console.log(bigLeter(str))
+}
