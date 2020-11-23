@@ -73,8 +73,8 @@
 
 function findUnique(){
     for( i = 1; i < arguments.length; i++){
-        for( l = 0; l < arguments.length - 1; l++){
-            if(arguments[i] = arguments[l]){
+        for( l = 0; l < i; l++){
+            if(arguments[i] = arguments[l] && i != l){
                 return false}
             }
         }
