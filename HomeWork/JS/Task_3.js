@@ -86,13 +86,5 @@ function findUnique(){
 
 //-----7-----
 
-// let a 
-// let arr = []
-// function lastElement(arr,a){
-//     for (i = 1; i < arguments.length; i++){
-
-//     }
-
-// }
 
 // //-----8----
