@@ -73,11 +73,11 @@
 
 function findUnique(){
     for( i = 1; i < arguments.length; i++){
-        l = i - 1
+        for( l = 0; l < arguments.length - 1; l++){
             if(arguments[i] = arguments[l]){
                 return false}
             }
-        
+        }
     return true
 }
 
@@ -85,5 +85,14 @@ function findUnique(){
 
 
 //-----7-----
+
+// let a 
+// let arr = []
+// function lastElement(arr,a){
+//     for (i = 1; i < arguments.length; i++){
+
+//     }
+
+// }
 
 // //-----8----
