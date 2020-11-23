@@ -73,8 +73,8 @@
 
 function findUnique(){
     for( i = 1; i < arguments.length; i++){
-        for( l = 0; l < i; l++){
-            if(arguments[i] = arguments[l] && i != l){
+        for( l = 0; l < arguments.length - 1; l++){
+            if(arguments[i] == arguments[l] && i != l){
                 return false}
             }
         }
@@ -86,6 +86,13 @@ function findUnique(){
 
 //-----7-----
 
+// let a 
+// let arr = []
+// function lastElement(arr,a){
+//     for (i = 1; i < arguments.length; i++){
 
+//     }
+
+// }
 
 // //-----8----
