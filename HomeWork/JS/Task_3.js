@@ -71,10 +71,10 @@
 
 //-----6-----
 
-function findUnique(){
-    for( i = 1; i < arguments.length; i++){
-        for( l = 0; l < arguments.length - 1; l++){
-            if(arguments[i] === arguments[l] && i != l){
+function findUnique(arr){
+    for( i = 0; i < arr.length; i++){
+        for( l = i + 1; l < arr.length; l++){
+            if(arr[i] === arr[l] && i != l){
                 return false}
             }
         }
