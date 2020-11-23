@@ -39,7 +39,7 @@
 // function randomInteger(min, max) {
 //   let rand = min - 0.5 + Math.random() * (max - min + 1);
 //   return Math.round(rand);
-// }
+//  }
 
 
 //-----4-----
@@ -58,17 +58,32 @@
 
 //-----5-----
 
-function findMin(){
-    let result = []
-    for (let i = 0; i < arguments.length; i++){
-        result.push(findMin())}
-    let o = Math.min(...result)
-    console.log(o);
-    return o;
-    }
+// function findMin(){
+//     let min = Infinity;
+//     for ( i = 0; i < arguments.length; i++){
+//         if (arguments[i] < min){
+//           min = arguments[i]
+//         }
+//     } 
+//     console.log(min)
+// }
 
-    //не розумію 
 
 //-----6-----
 
+function findUnique(){
+    for( i = 1; i < arguments.length; i++){
+        l = i - 1
+            if(arguments[i] = arguments[l]){
+                return false}
+            }
+        
+    return true
+}
 
+
+
+
+//-----7-----
+
+// //-----8----
