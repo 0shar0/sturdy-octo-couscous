@@ -20,13 +20,47 @@
 
 
 //-----3-----
-function chekAge(age){
+
+// function chekAge(){
+//     let age = prompt('Enter your age');
+//     if(age === ""){
+//         throw new Error("Field is empty!");
+//     }
+//     if( isNaN(age) ){
+//         throw new Error("Incorrect parameters!");
+//     }
+//     if(age < 14){
+//         throw new Error("You are to young!");
+//     }
+//     return age;
+// }
+// try {
+//     chekAge();   
+// }
+// catch (exeption){
+//     console.log(exeption.message)    
+// }
+
+//-----4-----
+
+
+
+//-----5-----
+
+function showUser(id){
+    if ( id < 0 ){
+        throw new Error('ID must not be negative: ' + id)
+    }
+    return id
+}
+function showUsers(ids){
+    for (i = 0; i < ids.length; i++){
     try{
-    if( isNaN(age) || age < 14){
-        throw "Incorrect parameters!"
-        }
-    }
+        showUser(ids[i])}
     catch(error){
-        alert("You are to youg")
+    console.log(error.message)
+    ids.splice(i,1)
     }
+}
+    return ids
 }
