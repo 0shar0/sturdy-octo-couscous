@@ -63,19 +63,6 @@ function showUser(id){
     }
     return x
 }
-// function showUsers(ids){
-//     for (i = 0; i < ids.length; i++){
-//     let arr = []    
-//     try{
-//         showUser(ids[i])
-//         arr.push(ids[i])
-//     }
-//     catch(error){
-//     console.log(error.message)
-//     }
-// }
-//     return arr
-// }
 
 function showUsers(ids){
     let result = []
