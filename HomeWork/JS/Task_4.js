@@ -43,35 +43,41 @@
 
 //-----4-----
 
-// function showMonthName(month){
-//     if (month < 1 || month > 12 ){
-//         return month;
-//     }
-//     throw new Error('Incorrect month number')   
-// }
-// class MonthExeption
-//     console.log(MonthExeption.message)
+class MonthExeption {
+    constructor(message){
+    this.name = MonthExeption
+    }
+}
+
+function showMonthName(month){
+    if (1 <= month && month <= 12 ){
+        return month;
+    }
+    throw new Error('Incorrect month number')   
+}
+
 
 //-----5-----
 
-function showUser(id){
-    if ( id < 0 ){
-        throw new Error('ID must not be negative: ' + id)
-    }
-    let x = {
-        Id: id
-    }
-    return x
-}
+// function showUser(id){
+//     if ( id < 0 ){
+//         throw new Error('ID must not be negative: ' + id)
+//     }
+//     let x = {
+//         Id: id
+//     }
+//     return x
+// }
 
-function showUsers(ids){
-    let result = []
-    for (i = 0; i < ids.length; i++){
-    try{
-        result.push(showUser(ids[i]))}
-    catch(error){
-    console.log(error.message)
-    }
-}
-    return result
-}
+// function showUsers(ids){
+//     let result = []
+//     for (i = 0; i < ids.length; i++){
+//     try{
+//         result.push(showUser(ids[i]))
+//         }
+//     catch(error){
+//     console.log(error.message)
+//     }
+// }
+//     return result
+// }
