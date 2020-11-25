@@ -45,16 +45,20 @@
 
 class MonthExeption {
     constructor(message){
-    this.name = MonthExeption
+    this.message = 'Incorrect month number'
     }
 }
 
 function showMonthName(month){
     if (1 <= month && month <= 12 ){
-        return month;
+        let monthNames = [ "January", "February", "March", "April", "May", "June", 
+                       "July", "August", "September", "October", "November", "December" ];
+        month === monthNames
+        return monthNames[month - 1];
     }
-    throw new Error('Incorrect month number')   
+    throw new MonthExeption  
 }
+
 
 
 //-----5-----
