@@ -66,11 +66,28 @@ class Worker{
         return this.dayRate * this.workingDays;
     }
     experience = 1.2;
+    get showExp(){
+        return this.Exp
+    }
+    set setExp(ex){
+        return this.Exp = ex
+     }
     showSalaryWithExperience(){
         return this.dayRate * this.workingDays * this.experience
     }
-    set experience(setExp){
-       return this.experience = setExp
-    }
 } 
 
+let worker1 = new Worker ("Jon Jonson", 20, 23);
+console.log(worker1.fullName);
+console.log(worker1.showSalary());
+
+console.log('Experience = ' + worker1.showExp);
+
+console.log(worker1.showSalaryWithExperience());
+worker1.setExp = 1.5;
+
+console.log('New experience = ' + worker1.showExp);
+
+console.log(worker1.showSalaryWithExperience());
+let worker2 = new Worker('Tom Tomson', 48, 22);
+let worker3 = new Worker('Andy Ander', 29, 23);
