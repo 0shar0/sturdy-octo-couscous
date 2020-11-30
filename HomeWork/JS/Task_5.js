@@ -105,5 +105,5 @@ console.log('New experience = ' + worker1.showExp);
 console.log(worker1.showSalaryWithExperience());
 let worker2 = new Worker('Tom Tomson', 48, 22);
 let worker3 = new Worker('Andy Ander', 29, 23);
- 
+sortSalary()
 //-----5-----
