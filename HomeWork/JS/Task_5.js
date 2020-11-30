@@ -30,19 +30,21 @@
 //     constructor(name, surname){
 //         this.name = name
 //         this.surname = surname
-//         this.fullname = function() {
+//     }
+//     fullname() { 
 //             return this.name + " " + this.surname
 //         }
 //     }
-// }
+    
 // class Student extends Person {
 //     constructor(name, surname, year){
 //         super(name, surname);
 //         this.year = year;
-//         this.showFullName = function(midleName){
+//     }
+//         showFullName(midleName) {
 //             return this.name + " " + this.surname + " " + midleName
 //         }
-//     }
+    
 //         showCourse() {
 //             let date = (new Date()).getFullYear()
 //             let course = date - this.year
@@ -56,54 +58,108 @@
 
 //-----4-----
 
-class Worker{
-    constructor(fullName, dayRate, workingDays){
-    this.fullName = fullName;
-    this.dayRate = dayRate;
-    this.workingDays = workingDays;
-    }
-    showSalary(){
-        return this.dayRate * this.workingDays;
-    }
-    experience = 1.2;
-    get showExp(){
-        return this.experience
-    }
-    set setExp(ex){
-        return this.experience = ex
-     }
-    showSalaryWithExperience(){
-        return this.dayRate * this.workingDays * this.experience
-    }
-} 
+// class Worker{
+//     constructor(fullName, dayRate, workingDays){
+//     this.fullName = fullName;
+//     this.dayRate = dayRate;
+//     this.workingDays = workingDays;
+//     }
+//     showSalary(){
+//         return this.dayRate * this.workingDays;
+//     }
+//     #experience = 1.2;
+//     get showExp(){
+//         return this.#experience
+//     }
+//     set setExp(ex){
+//         return this.#experience = ex
+//      }
+//     showSalaryWithExperience(){
+//         return this.dayRate * this.workingDays * this.#experience
+//     }
+// } 
 
-function sortSalary(){
-    let x1 = {
-        name: worker1.fullName,
-        salary: worker1.showSalary()
+// function sortSalary(){
+//     let x1 = {
+//         name: worker1.fullName,
+//         salary: worker1.showSalaryWithExperience()
+//     }
+//     let x2 = {
+//         name: worker2.fullName,
+//         salary: worker2.showSalaryWithExperience()
+//     }
+//     let x3 = {
+//         name: worker3.fullName,
+//         salary: worker3.showSalaryWithExperience()
+//     }
+//     let arr = [x1, x2, x3]
+//     let result = arr.sort(function(a,b){return a.salary - b.salary})
+//     console.log(result)
+// }
+
+// let worker1 = new Worker ("Jon Jonson", 20, 23);
+// console.log(worker1.fullName);
+// console.log(worker1.showSalary());
+// console.log('Experience = ' + worker1.showExp);
+// console.log(worker1.showSalaryWithExperience());
+// worker1.setExp = 1.5;
+// console.log('New experience = ' + worker1.showExp);
+// console.log(worker1.showSalaryWithExperience());
+// let worker2 = new Worker('Tom Tomson', 48, 22);
+// let worker3 = new Worker('Andy Ander', 29, 23);
+// worker2.setExp = 1.5;
+// worker3.setExp = 1.5;
+// sortSalary()
+
+//-----5-----
+
+class GeometricFigure{
+    getArea(){
+        return 0;
     }
-    let x2 = {
-        name: worker2.fullName,
-        salary: worker2.showSalary()
+    toString(){
+        return Object.getPrototypeOf(this).construtor
     }
-    let x3 = {
-        name: worker3.fullName,
-        salary: worker3.showSalary()
+}
+class Triangle extends GeometricFigure{
+    constructor(side, height){
+        super()
+        this.side = side;
+        this.height = height;
+        this.name = "Triangle"
     }
-    let arr = [x1, x2, x3]
-    let result = arr.sort(function(a,b){return a.salary - b.salary})
-    console.log(result)
+    getArea(){
+        return (this.side * this.height)/2
+    }
+}
+class Square extends GeometricFigure{
+    constructor(side){
+        super()
+        this.side = side;
+    }
+    getArea(){
+        return this.side ** 2
+    }
+}
+class Circle extends GeometricFigure{
+    constructor(radius){
+        super()
+        this.radius = radius;
+    }
+    getArea(){
+        return Math.PI * this.radius ** 2
+    }
+}
+function handleFigures(figures){
+    for(i = 0; i < figures.length; i++){
+        if( (figures[i] instanceof GeometricFigure) === true){
+
+            console.log(figures[i].getArea())
+        }
+    }
 }
 
-let worker1 = new Worker ("Jon Jonson", 20, 23);
-console.log(worker1.fullName);
-console.log(worker1.showSalary());
-console.log('Experience = ' + worker1.showExp);
-console.log(worker1.showSalaryWithExperience());
-worker1.setExp = 1.5;
-console.log('New experience = ' + worker1.showExp);
-console.log(worker1.showSalaryWithExperience());
-let worker2 = new Worker('Tom Tomson', 48, 22);
-let worker3 = new Worker('Andy Ander', 29, 23);
-sortSalary()
-//-----5-----
+let figures = [new Triangle(4, 5), new Square(7), new Circle(5)]
+console.log(handleFigures(figures))
+console.log(toString())
+
