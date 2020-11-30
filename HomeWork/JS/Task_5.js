@@ -126,7 +126,6 @@ class Triangle extends GeometricFigure{
         super()
         this.side = side;
         this.height = height;
-        this.name = "Triangle"
     }
     getArea(){
         return (this.side * this.height)/2
@@ -161,5 +160,5 @@ function handleFigures(figures){
 
 let figures = [new Triangle(4, 5), new Square(7), new Circle(5)]
 console.log(handleFigures(figures))
-console.log(toString())
+
 
