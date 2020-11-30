@@ -150,15 +150,24 @@ class Circle extends GeometricFigure{
     }
 }
 function handleFigures(figures){
+    let x = []
+    let result 
     for(i = 0; i < figures.length; i++){
         if( (figures[i] instanceof GeometricFigure) === true){
-
+            
             console.log(figures[i].getArea())
+            x.push(figures[i].getArea())
+            result = x.reduce((prev, item) => {
+                return prev + item;
+            })
+            }
         }
-    }
+        console.log("Total area = " + result)
+    
 }
 
 let figures = [new Triangle(4, 5), new Square(7), new Circle(5)]
 console.log(handleFigures(figures))
+
 
 
