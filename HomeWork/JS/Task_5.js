@@ -67,27 +67,43 @@ class Worker{
     }
     experience = 1.2;
     get showExp(){
-        return this.Exp
+        return this.experience
     }
     set setExp(ex){
-        return this.Exp = ex
+        return this.experience = ex
      }
     showSalaryWithExperience(){
         return this.dayRate * this.workingDays * this.experience
     }
 } 
 
+function sortSalary(){
+    let x1 = {
+        name: worker1.fullName,
+        salary: worker1.showSalary()
+    }
+    let x2 = {
+        name: worker2.fullName,
+        salary: worker2.showSalary()
+    }
+    let x3 = {
+        name: worker3.fullName,
+        salary: worker3.showSalary()
+    }
+    let arr = [x1, x2, x3]
+    let result = arr.sort(function(a,b){return a.salary - b.salary})
+    console.log(result)
+}
+
 let worker1 = new Worker ("Jon Jonson", 20, 23);
 console.log(worker1.fullName);
 console.log(worker1.showSalary());
-
 console.log('Experience = ' + worker1.showExp);
-
 console.log(worker1.showSalaryWithExperience());
 worker1.setExp = 1.5;
-
 console.log('New experience = ' + worker1.showExp);
-
 console.log(worker1.showSalaryWithExperience());
 let worker2 = new Worker('Tom Tomson', 48, 22);
 let worker3 = new Worker('Andy Ander', 29, 23);
+ 
+//-----5-----
