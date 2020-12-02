@@ -118,7 +118,7 @@ class GeometricFigure{
         return 0;
     }
     toString(){
-        return Object.getPrototypeOf(this).construtor.name
+        return Object.getPrototypeOf(this).construtor.name;
     }
 }
 class Triangle extends GeometricFigure{
@@ -155,7 +155,7 @@ function handleFigures(figures){
     for(i = 0; i < figures.length; i++){
         if( (figures[i] instanceof GeometricFigure) === true){
 
-          
+            console.log(Object.getPrototypeOf(figures[i]))
 
             console.log(figures[i].getArea())
             x.push(figures[i].getArea())
