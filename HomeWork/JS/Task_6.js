@@ -9,7 +9,7 @@
 
 //-----3-----
 
-// let d = document.querySelectorAll('p')
+// let d = document.querySelectorAll('#text p')
 // for (i = 0; i < d.length - 1; i++){
 //     alert ('Selector text ' + i + ': ' + d.item(i).innerText)
 // }
