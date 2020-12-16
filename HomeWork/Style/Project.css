@@ -1,0 +1,108 @@
+body{
+    margin: 10px;
+}
+
+#selector{
+    display: flex;
+    justify-content: space-around;
+    min-width: 500px;
+    
+}
+
+select{
+    text-align-last: center;
+    margin-top: 5px;
+}
+
+.button{
+    margin-top: 5px;
+    border-radius: 10px;
+    min-height: 30px;
+    min-width: 100px;
+    background: radial-gradient(#FFE4E1,#FF0000);
+    font-weight: 600;
+    font-size: 15px;
+    color: #2F4F4F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#item{
+    min-width: 100%;
+    min-height: 50px;
+    text-align: center;
+}
+
+#controlPanel{ 
+    border: solid black 5px;
+    margin: 5px;
+}
+
+#appartaments{
+    border: solid black 5px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:70px 1fr 1fr;
+    text-align: center;
+}
+
+#kitchen{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    min-height: 200px;
+}
+
+#bathroom{
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+#chil{
+    grid-column: 3/3;
+    grid-row: 2/2;
+}
+
+#livingroom{
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+#bedroom{
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+#storeroom{
+    grid-column: 3/3;
+    grid-row: 3/3;
+}
+
+#app{
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+.room{
+    display: inherit;
+}
+
+#control{
+    display: flex;
+    justify-content: space-around;
+}
+
+#controlTempWater{
+    display: inline-flex;
+}
+
+#waterControl{
+    margin: 2px;
+}
+
+#controlTempAir{
+    display: inline-flex;
+}
+
+#airControl{
+    margin: 2px;
+}

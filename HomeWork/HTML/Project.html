@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Style/Project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="controlPanel">
+        <div id="selector">
+            <button class='button' id="lidhtButton">Light</button>
+            <button class='button' id="waterButton">Water</button>
+            <button class='button' id="curtainsButton">Curtains</button>
+            <button class='button' id="windows">Windows</button>
+            <button class='button' id="climat">Climat Control</button>
+        </div>
+        <select id="item">
+            <option disabled selected>Choose location</option>
+            <option value="kitchen">Kitchen</option>
+            <option value="bathroom">Bathroom</option>
+            <option value="chil">Childs room</option>
+            <option value="livingroom">Livingroom</option>
+            <option value="bedroom">Bedroom</option>
+            <option value="storeroom">Storeroom</option>
+        </select>
+    </div>
+    <div id="appartaments"> 
+        <p id="app">Appartaments</p>
+        <div class="room" id="kitchen">Kitchen</div>
+        <div class="room" id="bathroom">Bathroom</div>
+        <div class="room" id="chil">Childs room</div>
+        <div class="room" id="livingroom">Livingroom</div>
+        <div class="room" id="bedroom">Bedroom</div>
+        <div class="room" id="storeroom">Storeroom</div>
+    </div>
+    <div id="control">
+        <div id="controlTempWater">
+            <button id="minusW" onclick="minusW()">-</button>
+            <p id="waterControl">Water temperature: 20 &#176C</p>
+            <button id="plusW" onclick="plusW()">+</button>
+        </div>
+        <div id="controlTempAir">
+            <button id="minusA" onclick="minusA()">-</button>
+            <p id="airControl">Climat temperature: 22 &#176C</p>
+            <button id="plusA" onclick="plusA()">+</button>
+        </div>
+    </div>
+    <div id="removeButton">
+    </div>
+    <button id="remove" onclick="remove()">Turn off</button>
+    
+    
+    <script src="../JS/Project.js"></script>
+</body>
+</html>
+
+
