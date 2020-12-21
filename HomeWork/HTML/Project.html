@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    <div id="body" class="body" onclick="save()">
     <div id="controlPanel">
         <div id="selector">
             <button class='button' id="lidhtButton">Light</button>
@@ -28,7 +29,7 @@
         </select>
     </div>
     <div id="appartaments"> 
-        <p id="app">Appartaments</p>
+        <p id="app" class="text">Appartaments</p>
         <div class="room" id="kitchen">Kitchen</div>
         <div class="room" id="bathroom">Bathroom</div>
         <div class="room" id="chil">Childs room</div>
@@ -36,21 +37,15 @@
         <div class="room" id="bedroom">Bedroom</div>
         <div class="room" id="storeroom">Storeroom</div>
     </div>
-    <div id="control">
-        <div id="controlTempWater">
-            <button id="minusW" onclick="minusW()">-</button>
-            <p id="waterControl">Water temperature: 20 &#176C</p>
-            <button id="plusW" onclick="plusW()">+</button>
-        </div>
-        <div id="controlTempAir">
-            <button id="minusA" onclick="minusA()">-</button>
-            <p id="airControl">Climat temperature: 22 &#176C</p>
-            <button id="plusA" onclick="plusA()">+</button>
-        </div>
+    <div id="addNewButton">
+        <button id="addButton">Add</button> 
+        <input id="inputButton" type="text">
+        <button id="removeButton" onclick="remB()">Remove</button>
     </div>
-    <div id="removeButton">
+    <div id="removeB">
+        <button id="remove" onclick="remove()">Turn off</button>
     </div>
-    <button id="remove" onclick="remove()">Turn off</button>
+    </div>
     
     
     <script src="../JS/Project.js"></script>

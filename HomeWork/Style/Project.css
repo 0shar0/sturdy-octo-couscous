@@ -19,7 +19,7 @@ select{
     border-radius: 10px;
     min-height: 30px;
     min-width: 100px;
-    background: radial-gradient(#FFE4E1,#FF0000);
+    background: radial-gradient(#FFE4E1,#ff0000);
     font-weight: 600;
     font-size: 15px;
     color: #2F4F4F;
@@ -84,18 +84,21 @@ select{
 
 .room{
     display: inherit;
+    border: solid black 2px;
+    margin: 1px;
 }
 
-#control{
+#controlTempAir{
     display: flex;
     justify-content: space-around;
 }
 
 #controlTempWater{
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
 }
 
-#waterControl{
+#climatControl{
     margin: 2px;
 }
 
@@ -103,6 +106,76 @@ select{
     display: inline-flex;
 }
 
-#airControl{
+#waterControl{
     margin: 2px;
+}
+
+.contrP{
+    border-radius: 30px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background: radial-gradient(#FFE4E1,#a71515)
+}
+
+.contrM{
+    border-radius: 30px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background: radial-gradient(#FFE4E1,#0079db)
+}
+
+#water{
+    margin-top: 0px;
+}
+
+p{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+.text{
+    cursor: text;
+}
+
+.contr{
+    max-height: 21px;
+}
+
+#addNewButton{
+    display: flex;
+    justify-content: space-around;
+}
+
+#removeButton{
+    width: 30%;
+    border-radius: 30px;
+}
+
+#inputButton{
+    width: 30%;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#addButton{
+    width: 30%;
+    border-radius: 30px;
+}
+
+#removeB{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#remove{
+    width: 90%;
+    background-color: red;
+    border-radius: 30px;
 }
