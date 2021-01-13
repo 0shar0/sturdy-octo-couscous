@@ -41,7 +41,6 @@
 //   return Math.round(rand);
 //  }
 
-
 //-----4-----
 
 // let a = prompt("Введіть основу степеня");
@@ -64,10 +63,9 @@
 //         if (arguments[i] < min){
 //           min = arguments[i]
 //         }
-//     } 
+//     }
 //     console.log(min)
 // }
-
 
 //-----6-----
 
@@ -93,11 +91,12 @@
 
 // //-----8----
 
-let str = "i love java script"
-function bigLeter(str){
-    return str.replace(/(^|\s)\S/g,
-    function(a){
-        return a.toUpperCase()
-    })
-    console.log(bigLeter(str))
+let str = "i love java script";
+function bigLeter(str) {
+  return str.replace(/(^|\s)\S/g, function (a) {
+    return a.toUpperCase();
+  });
+  console.log(bigLeter(str));
 }
+
+console.log(b); 

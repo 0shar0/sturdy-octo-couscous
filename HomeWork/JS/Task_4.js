@@ -3,7 +3,7 @@
 // function testThrow(exeption){
 //     try{
 //         throw exeption;
-//     } 
+//     }
 //     catch (error){
 //         console.log('Caught: ' + error);
 //     }
@@ -17,7 +17,6 @@
 //     }
 //     return width * height;
 // }
-
 
 //-----3-----
 
@@ -35,31 +34,41 @@
 //     return age;
 // }
 // try {
-//     chekAge();   
+//     chekAge();
 // }
 // catch (exeption){
-//     console.log(exeption.message)    
+//     console.log(exeption.message)
 // }
 
 //-----4-----
 
 class MonthExeption {
-    constructor(message){
-    this.message = 'Incorrect month number'
-    }
+  constructor(message) {
+    this.message = "Incorrect month number";
+  }
 }
 
-function showMonthName(month){
-    if (1 <= month && month <= 12 ){
-        let monthNames = [ "January", "February", "March", "April", "May", "June", 
-                       "July", "August", "September", "October", "November", "December" ];
-        month === monthNames
-        return monthNames[month - 1];
-    }
-    throw new MonthExeption  
+function showMonthName(month) {
+  if (1 <= month && month <= 12) {
+    let monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    month === monthNames;
+    return monthNames[month - 1];
+  }
+  throw new MonthExeption();
 }
-
-
 
 //-----5-----
 
